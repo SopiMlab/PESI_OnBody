@@ -25,7 +25,6 @@
 		1ACD648015D3ED7E00D3880B /* SOPIsettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACD647F15D3ED7E00D3880B /* SOPIsettingViewController.xib */; };
 		280342BC1907EB1D00047037 /* granular.pd in Resources */ = {isa = PBXBuildFile; fileRef = 280342BA1907EB1D00047037 /* granular.pd */; };
 		280342BD1907EB1D00047037 /* sampgran.pd in Resources */ = {isa = PBXBuildFile; fileRef = 280342BB1907EB1D00047037 /* sampgran.pd */; };
-		2825C75C18ED4DBC00E6644B /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2825C75B18ED4DBC00E6644B /* 3.wav */; };
 		2836827218D1BA0B00CE5F7F /* --READ--ME--.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */; };
 		2836827318D1BA0B00CE5F7F /* adsr171.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826C18D1BA0B00CE5F7F /* adsr171.pd */; };
 		2836827418D1BA0B00CE5F7F /* BLUE_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */; };
@@ -42,6 +41,7 @@
 		2836828818D1BA2B00CE5F7F /* SOPIu_sub.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */; };
 		2836828A18D1BACF00CE5F7F /* fiddle~.c in Sources */ = {isa = PBXBuildFile; fileRef = 2836828918D1BACF00CE5F7F /* fiddle~.c */; };
 		28588FEF16386D2F005BF54B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28588FEE16386D2F005BF54B /* Default-568h@2x.png */; };
+		28E27675193CA35000D1E01F /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 28E27674193CA35000D1E01F /* 3.wav */; };
 		E63137CF16BAC5EC00F495B0 /* SOPImobile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */; };
 		E63137D116BAC6B800F495B0 /* SOPImobile-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */; };
 		E63137D516BACA4A00F495B0 /* _PESI.pd in Resources */ = {isa = PBXBuildFile; fileRef = E63137D416BACA4900F495B0 /* _PESI.pd */; };
@@ -138,7 +138,6 @@
 		1ACD647F15D3ED7E00D3880B /* SOPIsettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOPIsettingViewController.xib; path = SOPIClasses/SOPIsettingViewController.xib; sourceTree = "<group>"; };
 		280342BA1907EB1D00047037 /* granular.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = granular.pd; path = SOPImobile/SOPIPD/granular.pd; sourceTree = SOURCE_ROOT; };
 		280342BB1907EB1D00047037 /* sampgran.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sampgran.pd; path = SOPImobile/SOPIPD/sampgran.pd; sourceTree = SOURCE_ROOT; };
-		2825C75B18ED4DBC00E6644B /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = SOPImobile/SOPIPD/3.wav; sourceTree = SOURCE_ROOT; };
 		2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "--READ--ME--.pd"; sourceTree = "<group>"; };
 		2836826C18D1BA0B00CE5F7F /* adsr171.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adsr171.pd; sourceTree = "<group>"; };
 		2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BLUE_onbody.pd; sourceTree = "<group>"; };
@@ -155,6 +154,7 @@
 		2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_sub.pd; path = SOPImobile/SOPIPD/SOPIu_sub.pd; sourceTree = SOURCE_ROOT; };
 		2836828918D1BACF00CE5F7F /* fiddle~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fiddle~.c"; path = "pd-for-ios/libpd/pure-data/extra/fiddle~/fiddle~.c"; sourceTree = "<group>"; };
 		28588FEE16386D2F005BF54B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../SOPIImages/Default-568h@2x.png"; sourceTree = "<group>"; };
+		28E27674193CA35000D1E01F /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = SOPImobile/SOPIPD/3.wav; sourceTree = SOURCE_ROOT; };
 		E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SOPImobile-Info.plist"; path = "SOPImobile/SOPImobile-Info.plist"; sourceTree = "<group>"; };
 		E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SOPImobile-Prefix.pch"; path = "SOPImobile/SOPImobile-Prefix.pch"; sourceTree = "<group>"; };
 		E63137D416BACA4900F495B0 /* _PESI.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _PESI.pd; path = SOPImobile/_PESI.pd; sourceTree = "<group>"; };
@@ -331,9 +331,9 @@
 		285E1217162CC45B0097678F /* SOPI PD */ = {
 			isa = PBXGroup;
 			children = (
+				28E27674193CA35000D1E01F /* 3.wav */,
 				280342BA1907EB1D00047037 /* granular.pd */,
 				280342BB1907EB1D00047037 /* sampgran.pd */,
-				2825C75B18ED4DBC00E6644B /* 3.wav */,
 				2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */,
 				2836827A18D1BA2B00CE5F7F /* list-drip.pd */,
 				2836827B18D1BA2B00CE5F7F /* rev3~.pd */,
@@ -556,7 +556,6 @@
 				1ACD648015D3ED7E00D3880B /* SOPIsettingViewController.xib in Resources */,
 				1A7469F515E68536004F3253 /* SOPIInfoViewController.xib in Resources */,
 				28588FEF16386D2F005BF54B /* Default-568h@2x.png in Resources */,
-				2825C75C18ED4DBC00E6644B /* 3.wav in Resources */,
 				E64D86FB16441A9B00AE8BBA /* .gitignore in Resources */,
 				E64D86FC16441A9B00AE8BBA /* CocoaAsyncSocket.podspec in Resources */,
 				280342BC1907EB1D00047037 /* granular.pd in Resources */,
@@ -588,6 +587,7 @@
 				E68632BB1676653D009F9449 /* Default@2x.png in Resources */,
 				2836828818D1BA2B00CE5F7F /* SOPIu_sub.pd in Resources */,
 				E63137CF16BAC5EC00F495B0 /* SOPImobile-Info.plist in Resources */,
+				28E27675193CA35000D1E01F /* 3.wav in Resources */,
 				E63137D516BACA4A00F495B0 /* _PESI.pd in Resources */,
 				2836828118D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd in Resources */,
 				E63137D716BACC2A00F495B0 /* InfoPlist.strings in Resources */,
