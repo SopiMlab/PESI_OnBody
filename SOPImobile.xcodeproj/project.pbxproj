@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A263A0215EF67A10057EB52 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2639FC15EF678F0057EB52 /* libpd-ios.a */; };
+		1A709C4515D39E8200DD184B /* SOPIperformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A709C4315D39E8200DD184B /* SOPIperformanceViewController.m */; };
+		1A709C4615D39E8200DD184B /* SOPIperformanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A709C4415D39E8200DD184B /* SOPIperformanceViewController.xib */; };
+		1A7469E615E64180004F3253 /* SOPIMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7469E515E64180004F3253 /* SOPIMotion.m */; };
+		1A7469F415E68536004F3253 /* SOPIInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7469F215E68536004F3253 /* SOPIInfoViewController.m */; };
+		1A7469F515E68536004F3253 /* SOPIInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7469F315E68536004F3253 /* SOPIInfoViewController.xib */; };
+		1A84C61C15D6C81800AE21A5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A84C61B15D6C81800AE21A5 /* CoreMotion.framework */; };
+		1A8D374715CBB3B1000E2414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D374615CBB3B1000E2414 /* UIKit.framework */; };
+		1A8D374915CBB3B1000E2414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D374815CBB3B1000E2414 /* Foundation.framework */; };
+		1A8D374B15CBB3B1000E2414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D374A15CBB3B1000E2414 /* CoreGraphics.framework */; };
+		1A8D375315CBB3B1000E2414 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D375215CBB3B1000E2414 /* main.m */; };
+		1A8D375715CBB3B1000E2414 /* SOPIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D375615CBB3B1000E2414 /* SOPIAppDelegate.m */; };
+		1A8D375A15CBB3B1000E2414 /* SOPIsettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D375915CBB3B1000E2414 /* SOPIsettingViewController.m */; };
+		1A8D377215CBB51B000E2414 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D377115CBB51B000E2414 /* AudioToolbox.framework */; };
+		1A8D377415CBB522000E2414 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8D377315CBB522000E2414 /* AVFoundation.framework */; };
+		1ACD648015D3ED7E00D3880B /* SOPIsettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACD647F15D3ED7E00D3880B /* SOPIsettingViewController.xib */; };
+		280342BC1907EB1D00047037 /* granular.pd in Resources */ = {isa = PBXBuildFile; fileRef = 280342BA1907EB1D00047037 /* granular.pd */; };
+		280342BD1907EB1D00047037 /* sampgran.pd in Resources */ = {isa = PBXBuildFile; fileRef = 280342BB1907EB1D00047037 /* sampgran.pd */; };
+		2825C75C18ED4DBC00E6644B /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2825C75B18ED4DBC00E6644B /* 3.wav */; };
+		2836827218D1BA0B00CE5F7F /* --READ--ME--.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */; };
+		2836827318D1BA0B00CE5F7F /* adsr171.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826C18D1BA0B00CE5F7F /* adsr171.pd */; };
+		2836827418D1BA0B00CE5F7F /* BLUE_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */; };
+		2836827518D1BA0B00CE5F7F /* GREEN_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826E18D1BA0B00CE5F7F /* GREEN_onbody.pd */; };
+		2836827618D1BA0B00CE5F7F /* m_accel_magnitude.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826F18D1BA0B00CE5F7F /* m_accel_magnitude.pd */; };
+		2836827718D1BA0B00CE5F7F /* RED_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827018D1BA0B00CE5F7F /* RED_onbody.pd */; };
+		2836827818D1BA0B00CE5F7F /* testTONE.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827118D1BA0B00CE5F7F /* testTONE.pd */; };
+		2836828118D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */; };
+		2836828218D1BA2B00CE5F7F /* list-drip.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827A18D1BA2B00CE5F7F /* list-drip.pd */; };
+		2836828318D1BA2B00CE5F7F /* rev3~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827B18D1BA2B00CE5F7F /* rev3~.pd */; };
+		2836828518D1BA2B00CE5F7F /* sopiscale.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827D18D1BA2B00CE5F7F /* sopiscale.pd */; };
+		2836828618D1BA2B00CE5F7F /* SOPIu_pwm.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827E18D1BA2B00CE5F7F /* SOPIu_pwm.pd */; };
+		2836828718D1BA2B00CE5F7F /* SOPIu_square.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827F18D1BA2B00CE5F7F /* SOPIu_square.pd */; };
+		2836828818D1BA2B00CE5F7F /* SOPIu_sub.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */; };
+		2836828A18D1BACF00CE5F7F /* fiddle~.c in Sources */ = {isa = PBXBuildFile; fileRef = 2836828918D1BACF00CE5F7F /* fiddle~.c */; };
+		28588FEF16386D2F005BF54B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28588FEE16386D2F005BF54B /* Default-568h@2x.png */; };
+		E63137CF16BAC5EC00F495B0 /* SOPImobile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */; };
+		E63137D116BAC6B800F495B0 /* SOPImobile-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */; };
+		E63137D516BACA4A00F495B0 /* _PESI.pd in Resources */ = {isa = PBXBuildFile; fileRef = E63137D416BACA4900F495B0 /* _PESI.pd */; };
+		E63137D716BACC2A00F495B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63137D616BACC2A00F495B0 /* InfoPlist.strings */; };
+		E63137D916BAD67F00F495B0 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E63137D816BAD67F00F495B0 /* README.txt */; };
+		E64D86FB16441A9B00AE8BBA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E64D868816441A9A00AE8BBA /* .gitignore */; };
+		E64D86FC16441A9B00AE8BBA /* CocoaAsyncSocket.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E64D868916441A9A00AE8BBA /* CocoaAsyncSocket.podspec */; };
+		E64D86FD16441A9B00AE8BBA /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = E64D868B16441A9A00AE8BBA /* Documentation.html */; };
+		E64D870016441A9B00AE8BBA /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E64D869016441A9A00AE8BBA /* README.markdown */; };
+		E64D870116441A9B00AE8BBA /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D869316441A9A00AE8BBA /* AsyncSocket.m */; };
+		E64D870216441A9B00AE8BBA /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D869516441A9A00AE8BBA /* AsyncUdpSocket.m */; };
+		E64D870316441A9B00AE8BBA /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = E64D869616441A9A00AE8BBA /* Documentation.html */; };
+		E64D87521644218700AE8BBA /* CocoaOSC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E64D87441644218700AE8BBA /* CocoaOSC-Info.plist */; };
+		E64D87531644218700AE8BBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E64D87471644218700AE8BBA /* InfoPlist.strings */; };
+		E64D87541644218700AE8BBA /* NS+OSCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D874A1644218700AE8BBA /* NS+OSCAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E64D87551644218700AE8BBA /* OSCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D874C1644218700AE8BBA /* OSCConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E64D87561644218700AE8BBA /* OSCDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D874F1644218700AE8BBA /* OSCDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E64D87571644218700AE8BBA /* OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D87511644218700AE8BBA /* OSCPacket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E64D875C1644223700AE8BBA /* RegexKitLite.html in Resources */ = {isa = PBXBuildFile; fileRef = E64D875A1644223700AE8BBA /* RegexKitLite.html */; };
+		E64D875D1644223700AE8BBA /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E64D875B1644223700AE8BBA /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E64D875F1644231100AE8BBA /* CocoaOSC.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D87461644218700AE8BBA /* CocoaOSC.h */; };
+		E64D87601644231100AE8BBA /* NS+OSCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D87491644218700AE8BBA /* NS+OSCAdditions.h */; };
+		E64D87611644231100AE8BBA /* OSCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D874B1644218700AE8BBA /* OSCConnection.h */; };
+		E64D87621644231100AE8BBA /* OSCConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D874D1644218700AE8BBA /* OSCConnectionDelegate.h */; };
+		E64D87631644231100AE8BBA /* OSCDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D874E1644218700AE8BBA /* OSCDispatcher.h */; };
+		E64D87641644231100AE8BBA /* OSCPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D87501644218700AE8BBA /* OSCPacket.h */; };
+		E64D87671644231100AE8BBA /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D869216441A9A00AE8BBA /* AsyncSocket.h */; };
+		E64D87681644231100AE8BBA /* AsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D869416441A9A00AE8BBA /* AsyncUdpSocket.h */; };
+		E64D87691644232300AE8BBA /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = E64D87591644223700AE8BBA /* RegexKitLite.h */; };
+		E64D876D1644262600AE8BBA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64D876C1644262600AE8BBA /* CFNetwork.framework */; };
+		E68632B3167660F1009F9449 /* IconSOPIb.png in Resources */ = {isa = PBXBuildFile; fileRef = E68632B2167660F1009F9449 /* IconSOPIb.png */; };
+		E68632B5167660FF009F9449 /* Icon@2xSOPIb.png in Resources */ = {isa = PBXBuildFile; fileRef = E68632B4167660FF009F9449 /* Icon@2xSOPIb.png */; };
+		E68632BB1676653D009F9449 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E68632BA1676653D009F9449 /* Default@2x.png */; };
+		E68898D51671CC7D00BA372D /* in2.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898CB1671CC7D00BA372D /* in2.png */; };
+		E68898D61671CC7D00BA372D /* info2.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898CC1671CC7D00BA372D /* info2.png */; };
+		E68898D71671CC7D00BA372D /* left2.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898CD1671CC7D00BA372D /* left2.png */; };
+		E68898D81671CC7D00BA372D /* out2.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898CE1671CC7D00BA372D /* out2.png */; };
+		E68898D91671CC7D00BA372D /* right2.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898CF1671CC7D00BA372D /* right2.png */; };
+		E68898DA1671CC7D00BA372D /* tune1b.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898D01671CC7D00BA372D /* tune1b.png */; };
+		E68898DB1671CC7D00BA372D /* tune2b.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898D11671CC7D00BA372D /* tune2b.png */; };
+		E68898DC1671CC7D00BA372D /* tune3b.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898D21671CC7D00BA372D /* tune3b.png */; };
+		E68898DD1671CC7D00BA372D /* tune4b.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898D31671CC7D00BA372D /* tune4b.png */; };
+		E68898DE1671CC7D00BA372D /* tuneBT2.png in Resources */ = {isa = PBXBuildFile; fileRef = E68898D41671CC7D00BA372D /* tuneBT2.png */; };
+		E690C4721667FE3800273DF1 /* circle3.png in Resources */ = {isa = PBXBuildFile; fileRef = E690C4711667FE3800273DF1 /* circle3.png */; };
+		E6D6A2951676166000EEB025 /* SOPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D6A2941676166000EEB025 /* SOPI.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A2639FB15EF678F0057EB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A2639F315EF678F0057EB52 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		1A2639FD15EF678F0057EB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A2639F315EF678F0057EB52 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		1A263A0015EF679B0057EB52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A2639F315EF678F0057EB52 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A2639F315EF678F0057EB52 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		1A709C4215D39E8200DD184B /* SOPIperformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOPIperformanceViewController.h; path = SOPIClasses/SOPIperformanceViewController.h; sourceTree = "<group>"; };
+		1A709C4315D39E8200DD184B /* SOPIperformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOPIperformanceViewController.m; path = SOPIClasses/SOPIperformanceViewController.m; sourceTree = "<group>"; };
+		1A709C4415D39E8200DD184B /* SOPIperformanceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOPIperformanceViewController.xib; path = SOPIClasses/SOPIperformanceViewController.xib; sourceTree = "<group>"; };
+		1A7469E415E64180004F3253 /* SOPIMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOPIMotion.h; path = SOPIClasses/SOPIMotion.h; sourceTree = "<group>"; };
+		1A7469E515E64180004F3253 /* SOPIMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOPIMotion.m; path = SOPIClasses/SOPIMotion.m; sourceTree = "<group>"; };
+		1A7469F115E68536004F3253 /* SOPIInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOPIInfoViewController.h; path = SOPIClasses/SOPIInfoViewController.h; sourceTree = "<group>"; };
+		1A7469F215E68536004F3253 /* SOPIInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOPIInfoViewController.m; path = SOPIClasses/SOPIInfoViewController.m; sourceTree = "<group>"; };
+		1A7469F315E68536004F3253 /* SOPIInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOPIInfoViewController.xib; path = SOPIClasses/SOPIInfoViewController.xib; sourceTree = "<group>"; };
+		1A84C61B15D6C81800AE21A5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1A8D374215CBB3B1000E2414 /* SOPImobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPImobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8D374615CBB3B1000E2414 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A8D374815CBB3B1000E2414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A8D374A15CBB3B1000E2414 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A8D375215CBB3B1000E2414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../SOPISupportingFiles/main.m; sourceTree = "<group>"; };
+		1A8D375515CBB3B1000E2414 /* SOPIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SOPIAppDelegate.h; path = SOPIClasses/SOPIAppDelegate.h; sourceTree = "<group>"; };
+		1A8D375615CBB3B1000E2414 /* SOPIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SOPIAppDelegate.m; path = SOPIClasses/SOPIAppDelegate.m; sourceTree = "<group>"; };
+		1A8D375815CBB3B1000E2414 /* SOPIsettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SOPIsettingViewController.h; path = SOPIClasses/SOPIsettingViewController.h; sourceTree = "<group>"; };
+		1A8D375915CBB3B1000E2414 /* SOPIsettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SOPIsettingViewController.m; path = SOPIClasses/SOPIsettingViewController.m; sourceTree = "<group>"; };
+		1A8D377115CBB51B000E2414 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1A8D377315CBB522000E2414 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1ACD647F15D3ED7E00D3880B /* SOPIsettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOPIsettingViewController.xib; path = SOPIClasses/SOPIsettingViewController.xib; sourceTree = "<group>"; };
+		280342BA1907EB1D00047037 /* granular.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = granular.pd; path = SOPImobile/SOPIPD/granular.pd; sourceTree = SOURCE_ROOT; };
+		280342BB1907EB1D00047037 /* sampgran.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sampgran.pd; path = SOPImobile/SOPIPD/sampgran.pd; sourceTree = SOURCE_ROOT; };
+		2825C75B18ED4DBC00E6644B /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = SOPImobile/SOPIPD/3.wav; sourceTree = SOURCE_ROOT; };
+		2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "--READ--ME--.pd"; sourceTree = "<group>"; };
+		2836826C18D1BA0B00CE5F7F /* adsr171.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adsr171.pd; sourceTree = "<group>"; };
+		2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BLUE_onbody.pd; sourceTree = "<group>"; };
+		2836826E18D1BA0B00CE5F7F /* GREEN_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GREEN_onbody.pd; sourceTree = "<group>"; };
+		2836826F18D1BA0B00CE5F7F /* m_accel_magnitude.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_accel_magnitude.pd; sourceTree = "<group>"; };
+		2836827018D1BA0B00CE5F7F /* RED_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RED_onbody.pd; sourceTree = "<group>"; };
+		2836827118D1BA0B00CE5F7F /* testTONE.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testTONE.pd; sourceTree = "<group>"; };
+		2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 4p_adapt_subsynth.pd; path = SOPImobile/SOPIPD/4p_adapt_subsynth.pd; sourceTree = SOURCE_ROOT; };
+		2836827A18D1BA2B00CE5F7F /* list-drip.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-drip.pd"; path = "SOPImobile/SOPIPD/list-drip.pd"; sourceTree = SOURCE_ROOT; };
+		2836827B18D1BA2B00CE5F7F /* rev3~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "rev3~.pd"; path = "SOPImobile/SOPIPD/rev3~.pd"; sourceTree = SOURCE_ROOT; };
+		2836827D18D1BA2B00CE5F7F /* sopiscale.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sopiscale.pd; path = SOPImobile/SOPIPD/sopiscale.pd; sourceTree = SOURCE_ROOT; };
+		2836827E18D1BA2B00CE5F7F /* SOPIu_pwm.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_pwm.pd; path = SOPImobile/SOPIPD/SOPIu_pwm.pd; sourceTree = SOURCE_ROOT; };
+		2836827F18D1BA2B00CE5F7F /* SOPIu_square.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_square.pd; path = SOPImobile/SOPIPD/SOPIu_square.pd; sourceTree = SOURCE_ROOT; };
+		2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_sub.pd; path = SOPImobile/SOPIPD/SOPIu_sub.pd; sourceTree = SOURCE_ROOT; };
+		2836828918D1BACF00CE5F7F /* fiddle~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fiddle~.c"; path = "pd-for-ios/libpd/pure-data/extra/fiddle~/fiddle~.c"; sourceTree = "<group>"; };
+		28588FEE16386D2F005BF54B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../SOPIImages/Default-568h@2x.png"; sourceTree = "<group>"; };
+		E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SOPImobile-Info.plist"; path = "SOPImobile/SOPImobile-Info.plist"; sourceTree = "<group>"; };
+		E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SOPImobile-Prefix.pch"; path = "SOPImobile/SOPImobile-Prefix.pch"; sourceTree = "<group>"; };
+		E63137D416BACA4900F495B0 /* _PESI.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _PESI.pd; path = SOPImobile/_PESI.pd; sourceTree = "<group>"; };
+		E63137D616BACC2A00F495B0 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = SOPISupportingFiles/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		E63137D816BAD67F00F495B0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E64D868816441A9A00AE8BBA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E64D868916441A9A00AE8BBA /* CocoaAsyncSocket.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoaAsyncSocket.podspec; sourceTree = "<group>"; };
+		E64D868B16441A9A00AE8BBA /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		E64D868C16441A9A00AE8BBA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E64D868D16441A9A00AE8BBA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E64D868E16441A9A00AE8BBA /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		E64D868F16441A9A00AE8BBA /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		E64D869016441A9A00AE8BBA /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		E64D869216441A9A00AE8BBA /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		E64D869316441A9A00AE8BBA /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		E64D869416441A9A00AE8BBA /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		E64D869516441A9A00AE8BBA /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		E64D869616441A9A00AE8BBA /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		E64D87441644218700AE8BBA /* CocoaOSC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CocoaOSC-Info.plist"; sourceTree = "<group>"; };
+		E64D87451644218700AE8BBA /* CocoaOSC-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaOSC-Prefix.pch"; sourceTree = "<group>"; };
+		E64D87461644218700AE8BBA /* CocoaOSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaOSC.h; sourceTree = "<group>"; };
+		E64D87481644218700AE8BBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E64D87491644218700AE8BBA /* NS+OSCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NS+OSCAdditions.h"; sourceTree = "<group>"; };
+		E64D874A1644218700AE8BBA /* NS+OSCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NS+OSCAdditions.m"; sourceTree = "<group>"; };
+		E64D874B1644218700AE8BBA /* OSCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCConnection.h; sourceTree = "<group>"; };
+		E64D874C1644218700AE8BBA /* OSCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCConnection.m; sourceTree = "<group>"; };
+		E64D874D1644218700AE8BBA /* OSCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCConnectionDelegate.h; sourceTree = "<group>"; };
+		E64D874E1644218700AE8BBA /* OSCDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCDispatcher.h; sourceTree = "<group>"; };
+		E64D874F1644218700AE8BBA /* OSCDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCDispatcher.m; sourceTree = "<group>"; };
+		E64D87501644218700AE8BBA /* OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCPacket.h; sourceTree = "<group>"; };
+		E64D87511644218700AE8BBA /* OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCPacket.m; sourceTree = "<group>"; };
+		E64D87591644223700AE8BBA /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		E64D875A1644223700AE8BBA /* RegexKitLite.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegexKitLite.html; sourceTree = "<group>"; };
+		E64D875B1644223700AE8BBA /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		E64D876C1644262600AE8BBA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E68632B2167660F1009F9449 /* IconSOPIb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconSOPIb.png; path = ../SOPIImages/IconSOPIb.png; sourceTree = "<group>"; };
+		E68632B4167660FF009F9449 /* Icon@2xSOPIb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2xSOPIb.png"; path = "../SOPIImages/Icon@2xSOPIb.png"; sourceTree = "<group>"; };
+		E68632BA1676653D009F9449 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../SOPIImages/Default@2x.png"; sourceTree = "<group>"; };
+		E68898CB1671CC7D00BA372D /* in2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = in2.png; path = ../SOPIImages/in2.png; sourceTree = "<group>"; };
+		E68898CC1671CC7D00BA372D /* info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info2.png; path = ../SOPIImages/info2.png; sourceTree = "<group>"; };
+		E68898CD1671CC7D00BA372D /* left2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left2.png; path = ../SOPIImages/left2.png; sourceTree = "<group>"; };
+		E68898CE1671CC7D00BA372D /* out2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = out2.png; path = ../SOPIImages/out2.png; sourceTree = "<group>"; };
+		E68898CF1671CC7D00BA372D /* right2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right2.png; path = ../SOPIImages/right2.png; sourceTree = "<group>"; };
+		E68898D01671CC7D00BA372D /* tune1b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tune1b.png; path = ../SOPIImages/tune1b.png; sourceTree = "<group>"; };
+		E68898D11671CC7D00BA372D /* tune2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tune2b.png; path = ../SOPIImages/tune2b.png; sourceTree = "<group>"; };
+		E68898D21671CC7D00BA372D /* tune3b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tune3b.png; path = ../SOPIImages/tune3b.png; sourceTree = "<group>"; };
+		E68898D31671CC7D00BA372D /* tune4b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tune4b.png; path = ../SOPIImages/tune4b.png; sourceTree = "<group>"; };
+		E68898D41671CC7D00BA372D /* tuneBT2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tuneBT2.png; path = ../SOPIImages/tuneBT2.png; sourceTree = "<group>"; };
+		E690C4711667FE3800273DF1 /* circle3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle3.png; path = SOPIImages/circle3.png; sourceTree = SOURCE_ROOT; };
+		E6D6A2941676166000EEB025 /* SOPI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SOPI.plist; path = ../SOPISupportingFiles/SOPI.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A8D373F15CBB3B1000E2414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A263A0215EF67A10057EB52 /* libpd-ios.a in Frameworks */,
+				1A84C61C15D6C81800AE21A5 /* CoreMotion.framework in Frameworks */,
+				1A8D377415CBB522000E2414 /* AVFoundation.framework in Frameworks */,
+				1A8D377215CBB51B000E2414 /* AudioToolbox.framework in Frameworks */,
+				1A8D374715CBB3B1000E2414 /* UIKit.framework in Frameworks */,
+				1A8D374915CBB3B1000E2414 /* Foundation.framework in Frameworks */,
+				1A8D374B15CBB3B1000E2414 /* CoreGraphics.framework in Frameworks */,
+				E64D876D1644262600AE8BBA /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2639F415EF678F0057EB52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A2639FC15EF678F0057EB52 /* libpd-ios.a */,
+				1A2639FE15EF678F0057EB52 /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A8D373715CBB3B1000E2414 = {
+			isa = PBXGroup;
+			children = (
+				E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */,
+				E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */,
+				E63137D416BACA4900F495B0 /* _PESI.pd */,
+				E63137CA16BABD6300F495B0 /* SOPI Classes */,
+				1A8D374C15CBB3B1000E2414 /* SOPI Images */,
+				282AC12516F079E600F3ED5F /* externals */,
+				285E1234162CCD970097678F /* SOPI Mobile Instr */,
+				285E1217162CC45B0097678F /* SOPI PD */,
+				1A8D374D15CBB3B1000E2414 /* SOPI Supporting Files */,
+				1A8D374515CBB3B1000E2414 /* Frameworks */,
+				1A8D374315CBB3B1000E2414 /* Products */,
+				E64D868716441A9A00AE8BBA /* CocoaAsyncSocket */,
+				E64D87431644218700AE8BBA /* CocoaOSC */,
+				E64D87581644223700AE8BBA /* RegexKitLite */,
+			);
+			sourceTree = "<group>";
+		};
+		1A8D374315CBB3B1000E2414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D374215CBB3B1000E2414 /* SOPImobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A8D374515CBB3B1000E2414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E64D876C1644262600AE8BBA /* CFNetwork.framework */,
+				1A8D377715CBBA7F000E2414 /* libPD */,
+				1A84C61B15D6C81800AE21A5 /* CoreMotion.framework */,
+				1A8D377315CBB522000E2414 /* AVFoundation.framework */,
+				1A8D377115CBB51B000E2414 /* AudioToolbox.framework */,
+				1A8D374615CBB3B1000E2414 /* UIKit.framework */,
+				1A8D374815CBB3B1000E2414 /* Foundation.framework */,
+				1A8D374A15CBB3B1000E2414 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8D374C15CBB3B1000E2414 /* SOPI Images */ = {
+			isa = PBXGroup;
+			children = (
+				E68632BA1676653D009F9449 /* Default@2x.png */,
+				28588FEE16386D2F005BF54B /* Default-568h@2x.png */,
+				E68632B4167660FF009F9449 /* Icon@2xSOPIb.png */,
+				E68632B2167660F1009F9449 /* IconSOPIb.png */,
+				E68898CB1671CC7D00BA372D /* in2.png */,
+				E68898CE1671CC7D00BA372D /* out2.png */,
+				E68898CC1671CC7D00BA372D /* info2.png */,
+				E68898D41671CC7D00BA372D /* tuneBT2.png */,
+				E68898CD1671CC7D00BA372D /* left2.png */,
+				E68898CF1671CC7D00BA372D /* right2.png */,
+				E68898D01671CC7D00BA372D /* tune1b.png */,
+				E68898D11671CC7D00BA372D /* tune2b.png */,
+				E68898D21671CC7D00BA372D /* tune3b.png */,
+				E68898D31671CC7D00BA372D /* tune4b.png */,
+				E690C4711667FE3800273DF1 /* circle3.png */,
+			);
+			name = "SOPI Images";
+			path = SOPImobile;
+			sourceTree = "<group>";
+		};
+		1A8D374D15CBB3B1000E2414 /* SOPI Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E63137D616BACC2A00F495B0 /* InfoPlist.strings */,
+				E6D6A2941676166000EEB025 /* SOPI.plist */,
+				1A8D375215CBB3B1000E2414 /* main.m */,
+			);
+			name = "SOPI Supporting Files";
+			path = SOPImobile;
+			sourceTree = "<group>";
+		};
+		1A8D377715CBBA7F000E2414 /* libPD */ = {
+			isa = PBXGroup;
+			children = (
+				1A2639F315EF678F0057EB52 /* libpd.xcodeproj */,
+			);
+			name = libPD;
+			sourceTree = "<group>";
+		};
+		282AC12516F079E600F3ED5F /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				2836828918D1BACF00CE5F7F /* fiddle~.c */,
+			);
+			name = externals;
+			sourceTree = "<group>";
+		};
+		285E1217162CC45B0097678F /* SOPI PD */ = {
+			isa = PBXGroup;
+			children = (
+				280342BA1907EB1D00047037 /* granular.pd */,
+				280342BB1907EB1D00047037 /* sampgran.pd */,
+				2825C75B18ED4DBC00E6644B /* 3.wav */,
+				2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */,
+				2836827A18D1BA2B00CE5F7F /* list-drip.pd */,
+				2836827B18D1BA2B00CE5F7F /* rev3~.pd */,
+				2836827D18D1BA2B00CE5F7F /* sopiscale.pd */,
+				2836827F18D1BA2B00CE5F7F /* SOPIu_square.pd */,
+				2836827E18D1BA2B00CE5F7F /* SOPIu_pwm.pd */,
+				2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */,
+			);
+			name = "SOPI PD";
+			path = SOPImobile/sopi;
+			sourceTree = "<group>";
+		};
+		285E1234162CCD970097678F /* SOPI Mobile Instr */ = {
+			isa = PBXGroup;
+			children = (
+				2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */,
+				2836826C18D1BA0B00CE5F7F /* adsr171.pd */,
+				2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */,
+				2836826E18D1BA0B00CE5F7F /* GREEN_onbody.pd */,
+				2836826F18D1BA0B00CE5F7F /* m_accel_magnitude.pd */,
+				2836827018D1BA0B00CE5F7F /* RED_onbody.pd */,
+				2836827118D1BA0B00CE5F7F /* testTONE.pd */,
+			);
+			name = "SOPI Mobile Instr";
+			path = SOPImobile/INSTR;
+			sourceTree = "<group>";
+		};
+		E63137CA16BABD6300F495B0 /* SOPI Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D375515CBB3B1000E2414 /* SOPIAppDelegate.h */,
+				1A8D375615CBB3B1000E2414 /* SOPIAppDelegate.m */,
+				1A709C4215D39E8200DD184B /* SOPIperformanceViewController.h */,
+				1A709C4315D39E8200DD184B /* SOPIperformanceViewController.m */,
+				1A709C4415D39E8200DD184B /* SOPIperformanceViewController.xib */,
+				1A8D375815CBB3B1000E2414 /* SOPIsettingViewController.h */,
+				1A8D375915CBB3B1000E2414 /* SOPIsettingViewController.m */,
+				1ACD647F15D3ED7E00D3880B /* SOPIsettingViewController.xib */,
+				1A7469F115E68536004F3253 /* SOPIInfoViewController.h */,
+				1A7469F215E68536004F3253 /* SOPIInfoViewController.m */,
+				1A7469F315E68536004F3253 /* SOPIInfoViewController.xib */,
+				1A7469E415E64180004F3253 /* SOPIMotion.h */,
+				1A7469E515E64180004F3253 /* SOPIMotion.m */,
+			);
+			name = "SOPI Classes";
+			sourceTree = "<group>";
+		};
+		E64D868716441A9A00AE8BBA /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				E64D868816441A9A00AE8BBA /* .gitignore */,
+				E64D868916441A9A00AE8BBA /* CocoaAsyncSocket.podspec */,
+				E64D868A16441A9A00AE8BBA /* GCD */,
+				E64D869016441A9A00AE8BBA /* README.markdown */,
+				E64D869116441A9A00AE8BBA /* RunLoop */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		E64D868A16441A9A00AE8BBA /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				E64D868B16441A9A00AE8BBA /* Documentation.html */,
+				E64D868C16441A9A00AE8BBA /* GCDAsyncSocket.h */,
+				E64D868D16441A9A00AE8BBA /* GCDAsyncSocket.m */,
+				E64D868E16441A9A00AE8BBA /* GCDAsyncUdpSocket.h */,
+				E64D868F16441A9A00AE8BBA /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		E64D869116441A9A00AE8BBA /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				E64D869216441A9A00AE8BBA /* AsyncSocket.h */,
+				E64D869316441A9A00AE8BBA /* AsyncSocket.m */,
+				E64D869416441A9A00AE8BBA /* AsyncUdpSocket.h */,
+				E64D869516441A9A00AE8BBA /* AsyncUdpSocket.m */,
+				E64D869616441A9A00AE8BBA /* Documentation.html */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		E64D87431644218700AE8BBA /* CocoaOSC */ = {
+			isa = PBXGroup;
+			children = (
+				E64D87441644218700AE8BBA /* CocoaOSC-Info.plist */,
+				E64D87451644218700AE8BBA /* CocoaOSC-Prefix.pch */,
+				E64D87461644218700AE8BBA /* CocoaOSC.h */,
+				E64D87471644218700AE8BBA /* InfoPlist.strings */,
+				E64D87491644218700AE8BBA /* NS+OSCAdditions.h */,
+				E64D874A1644218700AE8BBA /* NS+OSCAdditions.m */,
+				E64D874B1644218700AE8BBA /* OSCConnection.h */,
+				E64D874C1644218700AE8BBA /* OSCConnection.m */,
+				E64D874D1644218700AE8BBA /* OSCConnectionDelegate.h */,
+				E64D874E1644218700AE8BBA /* OSCDispatcher.h */,
+				E64D874F1644218700AE8BBA /* OSCDispatcher.m */,
+				E64D87501644218700AE8BBA /* OSCPacket.h */,
+				E64D87511644218700AE8BBA /* OSCPacket.m */,
+				E63137D816BAD67F00F495B0 /* README.txt */,
+			);
+			path = CocoaOSC;
+			sourceTree = "<group>";
+		};
+		E64D87581644223700AE8BBA /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				E64D87591644223700AE8BBA /* RegexKitLite.h */,
+				E64D875A1644223700AE8BBA /* RegexKitLite.html */,
+				E64D875B1644223700AE8BBA /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E64D875E164422F000AE8BBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64D87691644232300AE8BBA /* RegexKitLite.h in Headers */,
+				E64D875F1644231100AE8BBA /* CocoaOSC.h in Headers */,
+				E64D87601644231100AE8BBA /* NS+OSCAdditions.h in Headers */,
+				E64D87611644231100AE8BBA /* OSCConnection.h in Headers */,
+				E64D87621644231100AE8BBA /* OSCConnectionDelegate.h in Headers */,
+				E64D87631644231100AE8BBA /* OSCDispatcher.h in Headers */,
+				E64D87641644231100AE8BBA /* OSCPacket.h in Headers */,
+				E64D87671644231100AE8BBA /* AsyncSocket.h in Headers */,
+				E64D87681644231100AE8BBA /* AsyncUdpSocket.h in Headers */,
+				E63137D116BAC6B800F495B0 /* SOPImobile-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A8D374115CBB3B1000E2414 /* SOPImobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8D376015CBB3B1000E2414 /* Build configuration list for PBXNativeTarget "SOPImobile" */;
+			buildPhases = (
+				1A8D373E15CBB3B1000E2414 /* Sources */,
+				1A8D373F15CBB3B1000E2414 /* Frameworks */,
+				1A8D374015CBB3B1000E2414 /* Resources */,
+				E64D875E164422F000AE8BBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A263A0115EF679B0057EB52 /* PBXTargetDependency */,
+			);
+			name = SOPImobile;
+			productName = SOPImobile;
+			productReference = 1A8D374215CBB3B1000E2414 /* SOPImobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A8D373915CBB3B1000E2414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SOPI;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "SOPI Research Group";
+				TargetAttributes = {
+					1A8D374115CBB3B1000E2414 = {
+						DevelopmentTeam = 2H2KK2TF77;
+					};
+				};
+			};
+			buildConfigurationList = 1A8D373C15CBB3B1000E2414 /* Build configuration list for PBXProject "SOPImobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 1A8D373715CBB3B1000E2414;
+			productRefGroup = 1A8D374315CBB3B1000E2414 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1A2639F415EF678F0057EB52 /* Products */;
+					ProjectRef = 1A2639F315EF678F0057EB52 /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1A8D374115CBB3B1000E2414 /* SOPImobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1A2639FC15EF678F0057EB52 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 1A2639FB15EF678F0057EB52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A2639FE15EF678F0057EB52 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = 1A2639FD15EF678F0057EB52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A8D374015CBB3B1000E2414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2836828618D1BA2B00CE5F7F /* SOPIu_pwm.pd in Resources */,
+				1A709C4615D39E8200DD184B /* SOPIperformanceViewController.xib in Resources */,
+				1ACD648015D3ED7E00D3880B /* SOPIsettingViewController.xib in Resources */,
+				1A7469F515E68536004F3253 /* SOPIInfoViewController.xib in Resources */,
+				28588FEF16386D2F005BF54B /* Default-568h@2x.png in Resources */,
+				2825C75C18ED4DBC00E6644B /* 3.wav in Resources */,
+				E64D86FB16441A9B00AE8BBA /* .gitignore in Resources */,
+				E64D86FC16441A9B00AE8BBA /* CocoaAsyncSocket.podspec in Resources */,
+				280342BC1907EB1D00047037 /* granular.pd in Resources */,
+				E64D86FD16441A9B00AE8BBA /* Documentation.html in Resources */,
+				E64D870016441A9B00AE8BBA /* README.markdown in Resources */,
+				E64D870316441A9B00AE8BBA /* Documentation.html in Resources */,
+				E64D87521644218700AE8BBA /* CocoaOSC-Info.plist in Resources */,
+				280342BD1907EB1D00047037 /* sampgran.pd in Resources */,
+				E64D87531644218700AE8BBA /* InfoPlist.strings in Resources */,
+				E64D875C1644223700AE8BBA /* RegexKitLite.html in Resources */,
+				E690C4721667FE3800273DF1 /* circle3.png in Resources */,
+				E68898D51671CC7D00BA372D /* in2.png in Resources */,
+				E68898D61671CC7D00BA372D /* info2.png in Resources */,
+				E68898D71671CC7D00BA372D /* left2.png in Resources */,
+				2836828718D1BA2B00CE5F7F /* SOPIu_square.pd in Resources */,
+				2836828318D1BA2B00CE5F7F /* rev3~.pd in Resources */,
+				2836828518D1BA2B00CE5F7F /* sopiscale.pd in Resources */,
+				E68898D81671CC7D00BA372D /* out2.png in Resources */,
+				E68898D91671CC7D00BA372D /* right2.png in Resources */,
+				E68898DA1671CC7D00BA372D /* tune1b.png in Resources */,
+				E68898DB1671CC7D00BA372D /* tune2b.png in Resources */,
+				E68898DC1671CC7D00BA372D /* tune3b.png in Resources */,
+				E68898DD1671CC7D00BA372D /* tune4b.png in Resources */,
+				2836828218D1BA2B00CE5F7F /* list-drip.pd in Resources */,
+				E68898DE1671CC7D00BA372D /* tuneBT2.png in Resources */,
+				E6D6A2951676166000EEB025 /* SOPI.plist in Resources */,
+				E68632B3167660F1009F9449 /* IconSOPIb.png in Resources */,
+				E68632B5167660FF009F9449 /* Icon@2xSOPIb.png in Resources */,
+				E68632BB1676653D009F9449 /* Default@2x.png in Resources */,
+				2836828818D1BA2B00CE5F7F /* SOPIu_sub.pd in Resources */,
+				E63137CF16BAC5EC00F495B0 /* SOPImobile-Info.plist in Resources */,
+				E63137D516BACA4A00F495B0 /* _PESI.pd in Resources */,
+				2836828118D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd in Resources */,
+				E63137D716BACC2A00F495B0 /* InfoPlist.strings in Resources */,
+				E63137D916BAD67F00F495B0 /* README.txt in Resources */,
+				2836827318D1BA0B00CE5F7F /* adsr171.pd in Resources */,
+				2836827618D1BA0B00CE5F7F /* m_accel_magnitude.pd in Resources */,
+				2836827218D1BA0B00CE5F7F /* --READ--ME--.pd in Resources */,
+				2836827818D1BA0B00CE5F7F /* testTONE.pd in Resources */,
+				2836827418D1BA0B00CE5F7F /* BLUE_onbody.pd in Resources */,
+				2836827718D1BA0B00CE5F7F /* RED_onbody.pd in Resources */,
+				2836827518D1BA0B00CE5F7F /* GREEN_onbody.pd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A8D373E15CBB3B1000E2414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8D375315CBB3B1000E2414 /* main.m in Sources */,
+				1A8D375715CBB3B1000E2414 /* SOPIAppDelegate.m in Sources */,
+				2836828A18D1BACF00CE5F7F /* fiddle~.c in Sources */,
+				1A8D375A15CBB3B1000E2414 /* SOPIsettingViewController.m in Sources */,
+				1A709C4515D39E8200DD184B /* SOPIperformanceViewController.m in Sources */,
+				1A7469E615E64180004F3253 /* SOPIMotion.m in Sources */,
+				1A7469F415E68536004F3253 /* SOPIInfoViewController.m in Sources */,
+				E64D870116441A9B00AE8BBA /* AsyncSocket.m in Sources */,
+				E64D870216441A9B00AE8BBA /* AsyncUdpSocket.m in Sources */,
+				E64D87541644218700AE8BBA /* NS+OSCAdditions.m in Sources */,
+				E64D87551644218700AE8BBA /* OSCConnection.m in Sources */,
+				E64D87561644218700AE8BBA /* OSCDispatcher.m in Sources */,
+				E64D87571644218700AE8BBA /* OSCPacket.m in Sources */,
+				E64D875D1644223700AE8BBA /* RegexKitLite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A263A0115EF679B0057EB52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 1A263A0015EF679B0057EB52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E64D87471644218700AE8BBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64D87481644218700AE8BBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A8D375E15CBB3B1000E2414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DPD";
+				"OTHER_LDFLAGS[arch=*]" = "-licucore";
+				SDKROOT = iphoneos6.1;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		1A8D375F15CBB3B1000E2414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DPD";
+				"OTHER_LDFLAGS[arch=*]" = "-licucore";
+				SDKROOT = iphoneos6.1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Release;
+		};
+		1A8D376115CBB3B1000E2414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOPImobile/SOPImobile-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					CocoaOSC,
+					.,
+				);
+				INFOPLIST_FILE = "SOPImobile/SOPImobile-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CocoaOSC-noUI-dqzkdtrulvlbmceenowsczgrclbt/Build/Products/Debug-iphoneos\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DPD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "582C1880-C2D3-4DF1-AE0E-C117FD25D694";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/pd-for-ios/libpd/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A8D376215CBB3B1000E2414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOPImobile/SOPImobile-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					CocoaOSC,
+					.,
+				);
+				INFOPLIST_FILE = "SOPImobile/SOPImobile-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/CocoaOSC-noUI-dqzkdtrulvlbmceenowsczgrclbt/Build/Products/Debug-iphoneos\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DPD";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "582C1880-C2D3-4DF1-AE0E-C117FD25D694";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/pd-for-ios/libpd/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A8D373C15CBB3B1000E2414 /* Build configuration list for PBXProject "SOPImobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8D375E15CBB3B1000E2414 /* Debug */,
+				1A8D375F15CBB3B1000E2414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A8D376015CBB3B1000E2414 /* Build configuration list for PBXNativeTarget "SOPImobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8D376115CBB3B1000E2414 /* Debug */,
+				1A8D376215CBB3B1000E2414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A8D373915CBB3B1000E2414 /* Project object */;
+}
