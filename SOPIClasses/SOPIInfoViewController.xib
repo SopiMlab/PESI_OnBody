@@ -71,8 +71,8 @@
                     <rect key="frame" x="20" y="296" width="242" height="111"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <mutableString key="text">Created by SOPI Research Group                                                        
-PESI Research Project                         Academy of Finland (pr. 137646)                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Copyright (c) 2013 Aalto University.                                                      All rights reserved.      </mutableString>
+                    <string key="text">Created by SOPI Research Group                                                        
+PESI Research Project                         Academy of Finland (pr. 137646)                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Copyright (c) 2013 Aalto University.                                                      All rights reserved.      </string>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <dataDetectorType key="dataDetectorTypes" link="YES"/>

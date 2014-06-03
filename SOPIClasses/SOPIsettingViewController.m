@@ -141,10 +141,9 @@ int i,j;
 
 -(void)gyroscopeUpdateAvailable:(CMGyroData*)gyroscopeData{
     
-       // gyroscopeX = gyroscopeData.rotationRate.x* kFilteringFactor + gyroscopeX * (1.0 - kFilteringFactor);;
-        gyroscopeX = gyroscopeData.rotationRate.x;
-        gyroscopeY = gyroscopeData.rotationRate.y;
-        gyroscopeZ = gyroscopeData.rotationRate.z;
+    gyroscopeX = gyroscopeData.rotationRate.x * kFilteringFactor + gyroscopeX * (1.0 - kFilteringFactor);
+    gyroscopeY= gyroscopeData.rotationRate.y * kFilteringFactor + gyroscopeY * (1.0 - kFilteringFactor);
+    gyroscopeZ = gyroscopeData.rotationRate.z * kFilteringFactor + gyroscopeZ * (1.0 - kFilteringFactor);
     
         gyroscopeBarX.progress=ABS((float)gyroscopeX);
         gyroscopeBarY.progress=ABS((float)gyroscopeY);
