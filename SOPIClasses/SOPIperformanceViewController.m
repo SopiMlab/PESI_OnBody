@@ -159,7 +159,7 @@ void fiddle_tilde_setup(); // test external for fiddle~
     connection.delegate = self;
     connection.continuouslyReceivePackets = YES;
     NSError *error;
-    if (![connection bindToAddress:nil port:11000 error:&error])
+    if (![connection bindToAddress:nil port:11000 error:&error]) // This is the mobile phone's port number that the host computers sends OSC data to
     {
         NSLog(@"Could not bind UDP connection: %@", error);
     }
