@@ -24,6 +24,7 @@
 
 @interface SOPIAppDelegate(){
     CMMotionManager *motionManager;
+    CMAttitude *referenceAttitude;
 }
 @property (strong, nonatomic) UINavigationController* navigationController;
 @property (strong, nonatomic) SOPIsettingViewController *settingController;

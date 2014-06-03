@@ -49,7 +49,7 @@
 #X obj 339 249 RED_onbody;
 #X text 68 118 input data from the iPhone built-in sensors;
 #N canvas 160 27 570 471 ----------sensorInputReceiveObjects-------
-0;
+1;
 #X obj 25 -364 r gyroscopeX;
 #X obj 104 -364 r gyroscopeY;
 #X obj 183 -364 r gyroscopeZ;

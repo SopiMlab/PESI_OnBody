@@ -35,6 +35,7 @@
 #define kNoReadingValue 999
 
 
+
 @interface SOPIperformanceViewController (){
     UIAccelerationValue accelerationX;
     UIAccelerationValue accelerationY;
@@ -340,16 +341,6 @@ void fiddle_tilde_setup(); // test external for fiddle~
     [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.y toReceiver:@"tune4y"];
 
     
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 0]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune1x"];
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 0]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune1y"];
- //   [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 1]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune2x"];
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 1]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune2y"];
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 2]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune3x"];
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 2]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune3y"];
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune4x"];
-//    [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune4y"];
-
-    
     
 }
 
@@ -442,8 +433,6 @@ void fiddle_tilde_setup(); // test external for fiddle~
         fingerCircle.center = CGPointMake(touchX,touchY);
         [PdBase sendFloat:touchX toReceiver:@"touchPositionX"];
         [PdBase sendFloat:touchY toReceiver:@"touchPositionY"];
-    //    [PdBase sendFloat:touchX/self.view.bounds.size.width toReceiver:@"touchPositionX"];
-  //      [PdBase sendFloat:touchY/self.view.bounds.size.height toReceiver:@"touchPositionY"];
         [PdBase sendFloat:1.0 toReceiver:@"screenIsBeingTouched"];
     }
     [super touchesBegan:touches withEvent:event];
@@ -462,9 +451,7 @@ void fiddle_tilde_setup(); // test external for fiddle~
         }
         [PdBase sendFloat:touchX toReceiver:@"touchPositionX"];
         [PdBase sendFloat:touchY toReceiver:@"touchPositionY"];
-     //   [PdBase sendFloat:touchX/self.view.bounds.size.width toReceiver:@"touchPositionX"];
-      //  [PdBase sendFloat:touchY/self.view.bounds.size.height toReceiver:@"touchPositionY"];
-
+     
         
     }else{
         for (UITouch *touch in touches) {
@@ -596,11 +583,13 @@ CGFloat DistPoints(CGPoint point1,CGPoint point2){
     accelerationZ = accelerometerData.acceleration.z * kFilteringFactor + accelerationZ * (1.0 - kFilteringFactor);
 }
 
--(void)gyroscopeUpdateAvailable:(CMGyroData*)gyroscopeData{        
-  //  gyroscopeX = gyroscopeData.rotationRate.x * kFilteringFactor + gyroscopeX * (1.0 - kFilteringFactor);
-    gyroscopeX = gyroscopeData.rotationRate.x;
-    gyroscopeY = gyroscopeData.rotationRate.y;
-    gyroscopeZ = gyroscopeData.rotationRate.z;
+
+
+-(void)gyroscopeUpdateAvailable:(CMGyroData*)gyroscopeData{
+    gyroscopeX = gyroscopeData.rotationRate.x * kFilteringFactor + gyroscopeX * (1.0 - kFilteringFactor);
+    gyroscopeY= gyroscopeData.rotationRate.y * kFilteringFactor + gyroscopeY * (1.0 - kFilteringFactor);
+    gyroscopeZ = gyroscopeData.rotationRate.z * kFilteringFactor + gyroscopeZ * (1.0 - kFilteringFactor);
+  
     }
 
 
@@ -672,7 +661,7 @@ CGFloat DistPoints(CGPoint point1,CGPoint point2){
     return address;
 }
 
-//LOOPS----------------------------------------------------------------
+//LOOPS-------DATA STREAM---------------------------------------------------------
 
 -(void)loopPing{
     NSString *remoteHost = mainHost;
@@ -769,15 +758,6 @@ CGFloat DistPoints(CGPoint point1,CGPoint point2){
             [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.x toReceiver:@"tune4x"];
             [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.y toReceiver:@"tune4y"];
             
-            
-      //      [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 0]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune1x"];
-   //         [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 0]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune1y"];
-    //        [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 1]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune2x"];
-   //         [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 1]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune2y"];
-   //         [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 2]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune3x"];
-    //        [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 2]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune3y"];
-    //        [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.x/[UIScreen mainScreen].bounds.size.width toReceiver:@"tune4x"];
-   //         [PdBase sendFloat:((UIImageView *) [myTunes objectAtIndex: 3]).center.y/[UIScreen mainScreen].bounds.size.height toReceiver:@"tune4y"];
             
         }
 
