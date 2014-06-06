@@ -1,4 +1,4 @@
-#N canvas 475 355 843 374 10;
+#N canvas 97 192 843 374 10;
 #X obj -51 -318 outlet~;
 #X obj 11 -669 r touchPositionY;
 #X obj 144 -389 vline~;

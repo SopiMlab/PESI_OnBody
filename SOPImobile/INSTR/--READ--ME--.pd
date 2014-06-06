@@ -1,25 +1,18 @@
-#N canvas 850 288 807 387 10;
-#X text 52 -212 MAIN SCENE;
-#X text 424 -189 SETTINGS SCENE;
-#X text 425 -174 Throught he settings scene \, Red \, Green and Blue
+#N canvas 304 612 807 387 10;
+#X text 37 -160 MAIN SCENE;
+#X text 422 -149 SETTINGS SCENE;
+#X text 423 -134 Throught he settings scene \, Red \, Green and Blue
 sound modules can be chosen and the update rate for gyroscope and accelerometer
 data can be set. It is also possible to enable or disable gyroscope
 and accelerometer input data as well as vibration output. The arrow
 button \, on the top-left \, pointing to the left will bring the main
 scene back. The circle button \, with "i" \, on the top-right corner
 will bring the info scene (SOPIInfoViewController.xib);
-#X text 424 -39 INFO SCENE;
-#X text 424 -25 The copyright \, version and licence info can be found
+#X text 422 1 INFO SCENE;
+#X text 422 15 The copyright \, version and licence info can be found
 in this scene (SOPIInfoViewController.xib).;
-#X text 44 -53 4 POINT TUNING SCENE;
-#X text 51 -188 Through the main scene it is possible to move back
-and forth between the scenes. The arrow button \, on the top-right
-corner of the main scene \, pointing to the right side of the screen
-\, will bring the settings scene (SOPIsettingsViewController.xib).
-The circle button \, on the top-left of the screen \, will bring the
-4-point Tuning screen (SOPIperformanceViewController.xib). The backgroundcolor
-indicates the selected sound module.;
-#X text 43 -32 This scene sends the x and y coordinates of the 4 circles
+#X text 41 1 4 POINT TUNING SCENE;
+#X text 40 22 This scene sends the x and y coordinates of the 4 circles
 continuously to all the sound modules.The position of the cicles can
 be changed and 4 different alternative combination can be saved in
 the preset bar on the bottom of the scene \, simply by first choosing
@@ -27,3 +20,11 @@ the number of the preset \, then setting up the position of the 4 circles
 on the screen and then pressing the save button.The circle button \,
 on the top-left of the screen \, will bring the main scene and se the
 4-point Tuning circles in the background.;
+#X text 36 -136 Through the main scene in SOPImobile.xcodeprof \, it
+is possible to move back and forth between the scenes. The arrow button
+\, on the top-right corner of the main scene \, pointing to the right
+side of the screen \, will bring the settings scene (SOPIsettingsViewController.xib).
+The circle button \, on the top-left of the screen \, will bring the
+4-point Tuning screen (SOPIperformanceViewController.xib). The backgroundcolor
+indicates the selected sound module.;
+#X text 46 -204 Mobile Interface features;

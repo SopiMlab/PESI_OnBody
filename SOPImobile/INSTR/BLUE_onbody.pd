@@ -1,22 +1,22 @@
-#N canvas 477 67 924 535 10;
-#X obj 327 -88 vline~;
-#X msg 326 -66 1;
-#X msg 355 -69 0;
-#X msg 368 -111 0 500;
-#X obj 369 -88 delay 505;
-#X obj 326 -132 sel 1 0;
-#X obj 326 -237 r instID;
-#X obj 326 -215 + 1;
-#X msg 326 -171 1;
-#X msg 357 -171 0;
-#X obj 326 -151 change;
-#X msg 327 -111 1 400;
-#X obj 383 -68 loadbang;
-#X obj 326 -41 switch~;
-#X obj 466 -63 *~;
-#X obj 466 40 outlet~;
-#X obj 326 -193 sel 3;
-#N canvas 360 586 634 297 tuning------------ 0;
+#N canvas 477 67 919 439 10;
+#X obj 327 -138 vline~;
+#X msg 326 -116 1;
+#X msg 355 -119 0;
+#X msg 368 -161 0 500;
+#X obj 369 -138 delay 505;
+#X obj 326 -182 sel 1 0;
+#X obj 326 -287 r instID;
+#X obj 326 -265 + 1;
+#X msg 326 -221 1;
+#X msg 357 -221 0;
+#X obj 326 -201 change;
+#X msg 327 -161 1 400;
+#X obj 383 -118 loadbang;
+#X obj 326 -91 switch~;
+#X obj 466 -113 *~;
+#X obj 466 -10 outlet~;
+#X obj 326 -243 sel 3;
+#N canvas 360 586 681 380 tuning------------ 0;
 #X obj 38 -297 r tune1x;
 #X obj 9 -154 int;
 #X obj 95 -297 r tune1y;
@@ -53,9 +53,13 @@ can set and save pre-settings for your sound modules.;
 #X obj 182 -195 sopiscale 0 90 0 500;
 #X obj 9 -193 sopiscale 0 3000 0 500;
 #X obj 456 -200 sopiscale 0.1 10 130 500;
-#X text 176 -77 Reverb - output level (0-100) dB;
+#X text 230 -92 Reverb - output level (0-100) dB;
 #X text 304 -111 Reverb - liveless level (0-100);
 #X text 7 -108 grains - duration (ms);
+#X text 145 4 Each sound module in the PESI mobile instrument can be
+tuned through a 4-point tuning interface \, which assigns to the sound
+module with a parameter pre-set. The vector values for each points
+are mapped to parameters which cannot be modified any other way.;
 #X connect 0 0 14 0;
 #X connect 1 0 9 0;
 #X connect 2 0 15 0;
@@ -85,7 +89,7 @@ can set and save pre-settings for your sound modules.;
 #X connect 32 0 10 0;
 #X connect 33 0 1 0;
 #X connect 34 0 12 0;
-#X restore 307 -303 pd tuning------------;
+#X restore 307 -353 pd tuning------------;
 #X obj 113 -400 r touchPositionY;
 #X obj 333 -400 r gyroscopeX;
 #X obj 412 -400 r gyroscopeY;
@@ -128,13 +132,13 @@ can set and save pre-settings for your sound modules.;
 #X connect 13 2 0 0;
 #X connect 13 3 0 0;
 #X connect 14 0 1 0;
-#X restore 272 -275 pd grannu-----------------------;
-#X obj 176 -15 s vibrate;
-#X obj 176 -98 spigot;
-#X text 316 -22 each sound module has its own intrument id \, so that
+#X restore 272 -325 pd grannu-----------------------;
+#X obj 176 -65 s vibrate;
+#X obj 176 -148 spigot;
+#X text 316 -72 each sound module has its own intrument id \, so that
 the subpatches can manage the on/off control for DSP;
-#X text 486 -172 BLUE ONBODY SOUND MODULE;
-#X text 487 -153 This sound module delivers grains in new order with
+#X text 504 -284 BLUE ONBODY SOUND MODULE;
+#X text 505 -265 This sound module delivers grains in new order with
 a new microrhythm in avery simple granular synthesis patch. Tuning
 changes the values for duration and the pitch values of the grains
 \, as well as reverb liveness and output level. Acceleration on x-axis
