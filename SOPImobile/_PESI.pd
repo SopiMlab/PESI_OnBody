@@ -42,7 +42,7 @@
 #X restore 480 99 pd init;
 #X msg 111 327 0 500;
 #X obj 480 118 declare -path SOPIPD;
-#X obj 466 248 GREEN_onbody;
+#X obj 442 248 GREEN_onbody;
 #X obj 339 365 *~;
 #X obj 379 365 *~;
 #X msg 70 326 1 400;
@@ -102,14 +102,13 @@ setting \, the code enables the vibration and disables the audio input.
 #X text 336 553 iPhone's speaker and headphones (left-right);
 #X text 436 233 Sound Module_ GREEN;
 #X text 316 233 Sound Module_ RED;
-#X text 502 286 Sound Module 1 _ BLUE;
 #X text 21 539 Bang messages are sent to puredata callbacks in SOPImobile.xcodeprj
 / SOPI classes / SOPIperformanceViewController.m to activate;
 #X obj 25 82 --READ--ME--;
 #X text 387 388 The sound modules here are just;
 #X text 388 400 example patches to demonstrate the;
 #X text 389 414 PESI_OnBody features.;
-#X obj 448 274 BLUE_onbody;
+#X obj 512 288 BLUE_onbody;
 #N canvas 205 432 484 333 Licence 0;
 #X text 66 10 Created by: Koray Tahiroglu \, Miguel Valero Espada \,
 Nuno Correia \, James Nesfield \;;
@@ -136,6 +135,7 @@ responds to the beginning and the end points in the control range.
 Haptic feedback is activated through the vibration motor in iPhone.
 ;
 #X restore 354 204 pd README sound & action;
+#X text 512 272 Sound Module_ BLUE;
 #X connect 3 0 8 0;
 #X connect 3 0 15 1;
 #X connect 4 0 5 0;
@@ -159,5 +159,5 @@ Haptic feedback is activated through the vibration motor in iPhone.
 #X connect 23 0 12 0;
 #X connect 23 0 14 0;
 #X connect 25 0 3 0;
-#X connect 41 0 12 0;
-#X connect 41 0 14 0;
+#X connect 40 0 12 0;
+#X connect 40 0 14 0;
