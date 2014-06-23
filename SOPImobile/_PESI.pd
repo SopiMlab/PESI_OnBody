@@ -1,4 +1,4 @@
-#N canvas 140 310 652 693 10;
+#N canvas 543 191 652 693 10;
 #X declare -path INSTR;
 #X declare -path SOPIPD;
 #X obj 20 504 cnv 15 600 10 empty empty SOPImobile 140 120 0 46 -258113
@@ -22,7 +22,7 @@
 #X obj 408 343 clip~ -1 1;
 #X obj 408 322 hip~ 3;
 #X obj 36 479 spigot;
-#N canvas 0 811 619 177 init 0;
+#N canvas 80 820 619 177 init 0;
 #X obj 183 -245 r instID;
 #X obj 170 -154 s instID;
 #X obj 92 -260 loadbang;

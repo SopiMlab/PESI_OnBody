@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A263A0215EF67A10057EB52 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2639FC15EF678F0057EB52 /* libpd-ios.a */; };
 		1A709C4515D39E8200DD184B /* SOPIperformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A709C4315D39E8200DD184B /* SOPIperformanceViewController.m */; };
 		1A709C4615D39E8200DD184B /* SOPIperformanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A709C4415D39E8200DD184B /* SOPIperformanceViewController.xib */; };
 		1A7469E615E64180004F3253 /* SOPIMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7469E515E64180004F3253 /* SOPIMotion.m */; };
@@ -26,21 +25,19 @@
 		280342BC1907EB1D00047037 /* granular.pd in Resources */ = {isa = PBXBuildFile; fileRef = 280342BA1907EB1D00047037 /* granular.pd */; };
 		280342BD1907EB1D00047037 /* sampgran.pd in Resources */ = {isa = PBXBuildFile; fileRef = 280342BB1907EB1D00047037 /* sampgran.pd */; };
 		2836827218D1BA0B00CE5F7F /* --READ--ME--.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */; };
-		2836827318D1BA0B00CE5F7F /* adsr171.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826C18D1BA0B00CE5F7F /* adsr171.pd */; };
 		2836827418D1BA0B00CE5F7F /* BLUE_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */; };
 		2836827518D1BA0B00CE5F7F /* GREEN_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826E18D1BA0B00CE5F7F /* GREEN_onbody.pd */; };
-		2836827618D1BA0B00CE5F7F /* m_accel_magnitude.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836826F18D1BA0B00CE5F7F /* m_accel_magnitude.pd */; };
 		2836827718D1BA0B00CE5F7F /* RED_onbody.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827018D1BA0B00CE5F7F /* RED_onbody.pd */; };
-		2836827818D1BA0B00CE5F7F /* testTONE.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827118D1BA0B00CE5F7F /* testTONE.pd */; };
 		2836828118D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */; };
 		2836828218D1BA2B00CE5F7F /* list-drip.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827A18D1BA2B00CE5F7F /* list-drip.pd */; };
-		2836828318D1BA2B00CE5F7F /* rev3~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827B18D1BA2B00CE5F7F /* rev3~.pd */; };
 		2836828518D1BA2B00CE5F7F /* sopiscale.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827D18D1BA2B00CE5F7F /* sopiscale.pd */; };
 		2836828618D1BA2B00CE5F7F /* SOPIu_pwm.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827E18D1BA2B00CE5F7F /* SOPIu_pwm.pd */; };
 		2836828718D1BA2B00CE5F7F /* SOPIu_square.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836827F18D1BA2B00CE5F7F /* SOPIu_square.pd */; };
 		2836828818D1BA2B00CE5F7F /* SOPIu_sub.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */; };
 		2836828A18D1BACF00CE5F7F /* fiddle~.c in Sources */ = {isa = PBXBuildFile; fileRef = 2836828918D1BACF00CE5F7F /* fiddle~.c */; };
 		28588FEF16386D2F005BF54B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28588FEE16386D2F005BF54B /* Default-568h@2x.png */; };
+		28B6552519585137009BC39F /* testTONE.pd in Resources */ = {isa = PBXBuildFile; fileRef = 28B6552419585137009BC39F /* testTONE.pd */; };
+		28B6552719585531009BC39F /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2639FC15EF678F0057EB52 /* libpd-ios.a */; };
 		28E27675193CA35000D1E01F /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 28E27674193CA35000D1E01F /* 3.wav */; };
 		E63137CF16BAC5EC00F495B0 /* SOPImobile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */; };
 		E63137D116BAC6B800F495B0 /* SOPImobile-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */; };
@@ -139,21 +136,18 @@
 		280342BA1907EB1D00047037 /* granular.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = granular.pd; path = SOPImobile/SOPIPD/granular.pd; sourceTree = SOURCE_ROOT; };
 		280342BB1907EB1D00047037 /* sampgran.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sampgran.pd; path = SOPImobile/SOPIPD/sampgran.pd; sourceTree = SOURCE_ROOT; };
 		2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "--READ--ME--.pd"; sourceTree = "<group>"; };
-		2836826C18D1BA0B00CE5F7F /* adsr171.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adsr171.pd; sourceTree = "<group>"; };
 		2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BLUE_onbody.pd; sourceTree = "<group>"; };
 		2836826E18D1BA0B00CE5F7F /* GREEN_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GREEN_onbody.pd; sourceTree = "<group>"; };
-		2836826F18D1BA0B00CE5F7F /* m_accel_magnitude.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m_accel_magnitude.pd; sourceTree = "<group>"; };
 		2836827018D1BA0B00CE5F7F /* RED_onbody.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RED_onbody.pd; sourceTree = "<group>"; };
-		2836827118D1BA0B00CE5F7F /* testTONE.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testTONE.pd; sourceTree = "<group>"; };
 		2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 4p_adapt_subsynth.pd; path = SOPImobile/SOPIPD/4p_adapt_subsynth.pd; sourceTree = SOURCE_ROOT; };
 		2836827A18D1BA2B00CE5F7F /* list-drip.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-drip.pd"; path = "SOPImobile/SOPIPD/list-drip.pd"; sourceTree = SOURCE_ROOT; };
-		2836827B18D1BA2B00CE5F7F /* rev3~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "rev3~.pd"; path = "SOPImobile/SOPIPD/rev3~.pd"; sourceTree = SOURCE_ROOT; };
 		2836827D18D1BA2B00CE5F7F /* sopiscale.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sopiscale.pd; path = SOPImobile/SOPIPD/sopiscale.pd; sourceTree = SOURCE_ROOT; };
 		2836827E18D1BA2B00CE5F7F /* SOPIu_pwm.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_pwm.pd; path = SOPImobile/SOPIPD/SOPIu_pwm.pd; sourceTree = SOURCE_ROOT; };
 		2836827F18D1BA2B00CE5F7F /* SOPIu_square.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_square.pd; path = SOPImobile/SOPIPD/SOPIu_square.pd; sourceTree = SOURCE_ROOT; };
 		2836828018D1BA2B00CE5F7F /* SOPIu_sub.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SOPIu_sub.pd; path = SOPImobile/SOPIPD/SOPIu_sub.pd; sourceTree = SOURCE_ROOT; };
 		2836828918D1BACF00CE5F7F /* fiddle~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fiddle~.c"; path = "pd-for-ios/libpd/pure-data/extra/fiddle~/fiddle~.c"; sourceTree = "<group>"; };
 		28588FEE16386D2F005BF54B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../SOPIImages/Default-568h@2x.png"; sourceTree = "<group>"; };
+		28B6552419585137009BC39F /* testTONE.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = testTONE.pd; path = SOPImobile/SOPIPD/testTONE.pd; sourceTree = SOURCE_ROOT; };
 		28E27674193CA35000D1E01F /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = SOPImobile/SOPIPD/3.wav; sourceTree = SOURCE_ROOT; };
 		E63137CE16BAC5EC00F495B0 /* SOPImobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SOPImobile-Info.plist"; path = "SOPImobile/SOPImobile-Info.plist"; sourceTree = "<group>"; };
 		E63137D016BAC6B800F495B0 /* SOPImobile-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SOPImobile-Prefix.pch"; path = "SOPImobile/SOPImobile-Prefix.pch"; sourceTree = "<group>"; };
@@ -212,7 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A263A0215EF67A10057EB52 /* libpd-ios.a in Frameworks */,
+				28B6552719585531009BC39F /* libpd-ios.a in Frameworks */,
 				1A84C61C15D6C81800AE21A5 /* CoreMotion.framework in Frameworks */,
 				1A8D377415CBB522000E2414 /* AVFoundation.framework in Frameworks */,
 				1A8D377215CBB51B000E2414 /* AudioToolbox.framework in Frameworks */,
@@ -331,12 +325,12 @@
 		285E1217162CC45B0097678F /* SOPI PD */ = {
 			isa = PBXGroup;
 			children = (
+				28B6552419585137009BC39F /* testTONE.pd */,
 				28E27674193CA35000D1E01F /* 3.wav */,
 				280342BA1907EB1D00047037 /* granular.pd */,
 				280342BB1907EB1D00047037 /* sampgran.pd */,
 				2836827918D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd */,
 				2836827A18D1BA2B00CE5F7F /* list-drip.pd */,
-				2836827B18D1BA2B00CE5F7F /* rev3~.pd */,
 				2836827D18D1BA2B00CE5F7F /* sopiscale.pd */,
 				2836827F18D1BA2B00CE5F7F /* SOPIu_square.pd */,
 				2836827E18D1BA2B00CE5F7F /* SOPIu_pwm.pd */,
@@ -350,12 +344,9 @@
 			isa = PBXGroup;
 			children = (
 				2836826B18D1BA0B00CE5F7F /* --READ--ME--.pd */,
-				2836826C18D1BA0B00CE5F7F /* adsr171.pd */,
 				2836826D18D1BA0B00CE5F7F /* BLUE_onbody.pd */,
 				2836826E18D1BA0B00CE5F7F /* GREEN_onbody.pd */,
-				2836826F18D1BA0B00CE5F7F /* m_accel_magnitude.pd */,
 				2836827018D1BA0B00CE5F7F /* RED_onbody.pd */,
-				2836827118D1BA0B00CE5F7F /* testTONE.pd */,
 			);
 			name = "SOPI Mobile Instr";
 			path = SOPImobile/INSTR;
@@ -560,6 +551,7 @@
 				E64D86FC16441A9B00AE8BBA /* CocoaAsyncSocket.podspec in Resources */,
 				280342BC1907EB1D00047037 /* granular.pd in Resources */,
 				E64D86FD16441A9B00AE8BBA /* Documentation.html in Resources */,
+				28B6552519585137009BC39F /* testTONE.pd in Resources */,
 				E64D870016441A9B00AE8BBA /* README.markdown in Resources */,
 				E64D870316441A9B00AE8BBA /* Documentation.html in Resources */,
 				E64D87521644218700AE8BBA /* CocoaOSC-Info.plist in Resources */,
@@ -571,7 +563,6 @@
 				E68898D61671CC7D00BA372D /* info2.png in Resources */,
 				E68898D71671CC7D00BA372D /* left2.png in Resources */,
 				2836828718D1BA2B00CE5F7F /* SOPIu_square.pd in Resources */,
-				2836828318D1BA2B00CE5F7F /* rev3~.pd in Resources */,
 				2836828518D1BA2B00CE5F7F /* sopiscale.pd in Resources */,
 				E68898D81671CC7D00BA372D /* out2.png in Resources */,
 				E68898D91671CC7D00BA372D /* right2.png in Resources */,
@@ -592,10 +583,7 @@
 				2836828118D1BA2B00CE5F7F /* 4p_adapt_subsynth.pd in Resources */,
 				E63137D716BACC2A00F495B0 /* InfoPlist.strings in Resources */,
 				E63137D916BAD67F00F495B0 /* README.txt in Resources */,
-				2836827318D1BA0B00CE5F7F /* adsr171.pd in Resources */,
-				2836827618D1BA0B00CE5F7F /* m_accel_magnitude.pd in Resources */,
 				2836827218D1BA0B00CE5F7F /* --READ--ME--.pd in Resources */,
-				2836827818D1BA0B00CE5F7F /* testTONE.pd in Resources */,
 				2836827418D1BA0B00CE5F7F /* BLUE_onbody.pd in Resources */,
 				2836827718D1BA0B00CE5F7F /* RED_onbody.pd in Resources */,
 				2836827518D1BA0B00CE5F7F /* GREEN_onbody.pd in Resources */,
